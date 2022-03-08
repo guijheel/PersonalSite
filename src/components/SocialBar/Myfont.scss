@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Nick";
+  src: local("Nick"),
+    url(../../../public/assets/fonts/Nickainley-Normal.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+
+}
+.SocialBar {
+  display: flex;
+}
+.UlSocial {
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.UlSocial .LiSocial {
+  list-style: none;
+  margin: 0 0px;
+}
+
+.UlSocial .LiSocial .ASocial .IconSocial {
+  font-size: 40px;
+  color: #262626;
+  line-height: 80px;
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+}
+
+.UlSocial .LiSocial .ASocial .TextSocial {
+  padding: 0;
+  margin: 0;
+  color: #262626;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+.UlSocial .LiSocial .ASocial {
+  text-decoration: none;
+  width: 120%;
+  height: 80px;
+  background: #fff;
+  text-align: left;
+
+  transform: rotate(12deg) skew(25deg) translate(0, 0);
+  transition: 0.5s;
+  box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  border: 0.1px solid #b1b1b142;
+}
+
+.UlSocial .LiSocial .ASocial:before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transform: 0.5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+
+.UlSocial .LiSocial .ASocial:after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transform: 0.5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.UlSocial .LiSocial .ASocial:hover {
+  transform: rotate(+50deg) skew(25deg) translate(20px, -15px);
+  // transform: rotateY(180deg) skewX(176deg) rotate3d(1, 1, 1, 277deg);
+  box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+  margin: -10px;
+}
+
+.UlSocial .LiSocial:hover .IconSocial {
+  color: #fff;
+}
+
+.UlSocial .LiSocial:hover .TextSocial {
+  color: #fff;
+}
+
+.UlSocial .LiSocial:nth-child(1) .ASocial {
+  background: #fff;
+}
+.UlSocial .LiSocial:hover:nth-child(1) .ASocial:before {
+  background: black;
+}
+.UlSocial .LiSocial:hover:nth-child(1) .ASocial:after {
+  background: black;
+}

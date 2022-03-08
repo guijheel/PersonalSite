@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Nick";
+  src: local("Nick"),
+    url(../../../public/assets/fonts/Nickainley-Normal.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+
+                              'embedded-opentype', and 'svg' */
+
+  font-family: "Conso";
+  src: local("Conso"), url(../../../public/assets/fonts/Consolas.ttf) format("ttf");
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+.Conso {
+  font-family: "Conso";
+}
