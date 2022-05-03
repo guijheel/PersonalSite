@@ -4,6 +4,7 @@ import styled from "styled-components";
 import useWindows from "../../functions/useWindows";
 import SocialBar from "../../components/SocialBar/SocialBar";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import NavRight from "../../components/NavRight/NavRight";
 
 const HomePageDiv = styled.div`
     display: flex;
@@ -90,7 +91,7 @@ const Homepage = () => {
       </CenterDiv>
 
       <RightDiv>
-        <NavigationBar/>
+        <NavRight/>
       </RightDiv>
 
     </HomePageDiv>

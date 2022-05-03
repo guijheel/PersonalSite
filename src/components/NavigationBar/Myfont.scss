@@ -17,12 +17,13 @@
 #title span {
   vertical-align: middle;
   line-height: 1.5em;
-  transition: font-size 2s cubic-bezier(0, 1, 0, 1);
+  transition: font-size 2s cubic-bezier(0.81, 0.11, 0.58, 1);
 }
 #title span:hover {
   font-size: 1.5em; /* This adds a hover effect */
   line-height: 1em;
   transition: font-size .2s cubic-bezier(0, 0.75, 0, 1);
+  background-color: beige;
 }
 #title span:active {
   font-size: 1em;
