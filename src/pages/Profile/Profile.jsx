@@ -1,5 +1,6 @@
 import React from 'react'
 import useWindowDimensions from '../../functions/useWindows';
+import DiamondSkill from "../../components/DiamondSkill/DiamondSkill";
 import styled, { keyframes } from "styled-components";
 import "./Myfont.scss";
 
@@ -40,14 +41,16 @@ const ShapeDiv = styled.div`
 `;
 const TextDiv = styled.p`
 display: flex;
-font-family: "system-ui";
+font-family: cursive;
 flex-direction: column;
 flex-wrap: nowrap;
 align-content: center;
 justify-content: center;
 align-items: center;
-width: 100%;
+width: 50%;
 color:white;
+margin-left: 15%;
+margin-right: 15%;
 `;
 {
   // media queries pour le shape
@@ -65,6 +68,9 @@ const Profile = () => {
     maxWidth: "1280px",
     maxHeight: "824px",
   }
+  const styleP = {
+    fontSize: width / 80,
+  }
   return (
 
     <ProfilePageDiv style={style}>
@@ -72,11 +78,11 @@ const Profile = () => {
       <CenterDiv>
         <ContainerDiv className='container'>
           <ShapeDiv className='shape' style={styleShape}>
-            <TextDiv>
-             I'm Developper Full Stack JS Web and Mobile with two years
-             of experience both front-end and back-end developpement
-             and performing quality assurance.
-             
+            <TextDiv  style={styleP}>
+              I'm Developper Full Stack JS Web and Mobile with two years
+              of experience both front-end and back-end developpement
+              and performing quality assurance.
+          
             </TextDiv>
           </ShapeDiv>
         </ContainerDiv>
@@ -84,7 +90,7 @@ const Profile = () => {
       </CenterDiv>
 
       <RightDiv>
-        right
+        <DiamondSkill/>
       </RightDiv>
 
     </ProfilePageDiv>

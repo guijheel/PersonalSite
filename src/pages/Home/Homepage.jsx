@@ -81,7 +81,7 @@ const Homepage = () => {
     <HomePageDiv style={style}>
 
       <LeftDiv>
-        <SocialBar/>
+        <SocialBar color="secondary" fontSize="large"/>
       </LeftDiv>
 
 
