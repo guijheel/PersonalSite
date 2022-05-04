@@ -29,7 +29,7 @@ const RightDiv = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    
   `;
 
 

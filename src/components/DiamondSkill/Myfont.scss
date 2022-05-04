@@ -111,7 +111,7 @@
   background-image: linear-gradient( #fff, #efefef);
 }
 
-.box-text img {
+.box-text svg {
   max-width: 32px;
   max-height: 32px;
   -webkit-filter: grayscale(100%) saturate(0);
@@ -120,6 +120,7 @@
 }
 
 .tooltip {
+  font-family: 'sans-serif';
   visibility: hidden;
   opacity: 0;
   position: absolute;
