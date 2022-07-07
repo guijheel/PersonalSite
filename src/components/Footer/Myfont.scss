@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Conso";
+  src: local("Conso"), url(../../../public/assets/fonts/Consolas.ttf) format("ttf");
+  }
+.white{
+    color: white;
+}
+.entertainement{
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+}
+.KingHat{
+    transform: rotate(350deg);
+}

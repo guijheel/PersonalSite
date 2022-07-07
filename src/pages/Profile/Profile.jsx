@@ -1,8 +1,9 @@
 import React from 'react'
 import useWindowDimensions from '../../functions/useWindows';
 import DiamondSkill from "../../components/DiamondSkill/DiamondSkill";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import "./Myfont.scss";
+import Skills from '../../components/Skills/Skills';
 
 const ProfilePageDiv = styled.div`
     display: flex;
@@ -19,7 +20,7 @@ const CenterDiv = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 55%;
   `;
 
 const RightDiv = styled.div`
@@ -29,7 +30,7 @@ const RightDiv = styled.div`
     align-content: center;
     justify-content: center;
     align-items: center;
-    
+    width: 45%;
   `;
 
 
@@ -69,7 +70,7 @@ const Profile = () => {
     maxHeight: "824px",
   }
   const styleP = {
-    fontSize: width / 80,
+    fontSize: width / 55,
   }
   return (
 
@@ -90,7 +91,7 @@ const Profile = () => {
       </CenterDiv>
 
       <RightDiv>
-        <DiamondSkill/>
+          <Skills/> 
       </RightDiv>
 
     </ProfilePageDiv>
