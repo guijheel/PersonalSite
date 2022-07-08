@@ -83,7 +83,7 @@ const styles = {
 
 
   return (
-    <SocialBarDiv>
+    <SocialBarDiv className="SocialBarMobile">
 
     <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">

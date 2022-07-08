@@ -31,7 +31,7 @@ const RightDiv = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   align-content: center;
-  justify-content: center;
+  justify-content:flex-end;
   align-items: center;
   width: 45%;
 `;

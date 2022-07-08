@@ -6,6 +6,7 @@ import Contact from './pages/Contact/Contact';
 import Exp from './pages/Exp/Exp';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
      <Exp/>
      <Contact/>
      <Footer/>
+  
     </div>
   );
 }

@@ -12,7 +12,9 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import ReCAPTCHA from "react-google-recaptcha";
 import isEmail from "validator/lib/isEmail";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const Name = styled.div`
   display: flex;
@@ -32,11 +34,17 @@ const Test = styled.div`
   border: 1px solid black;
 `;
 
+const boxVariant = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+  hidden: { opacity: 0, scale: 0 }
+};
+
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
 const Form = () => {
+  
   const [fullname, setFullName] = useState();
   const [fullnameerror, setFullNameError] = useState();
   const [email, setEmail] = useState();
@@ -50,7 +58,10 @@ const Form = () => {
 
   const [open, setOpen] = useState(false);
   const [openError, setOpenError] = useState(false);
+  
+  
   const form = useRef();
+
 
   function onChange(value) {
     console.log("Captcha value:", value);
@@ -174,7 +185,7 @@ const Form = () => {
 
   return (
 
-<form
+    <form
       ref={form}
       onSubmit={sendEmail}
       className="formContact slide-in-left"

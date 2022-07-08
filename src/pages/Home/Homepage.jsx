@@ -5,6 +5,8 @@ import useWindows from "../../functions/useWindows";
 import SocialBar from "../../components/SocialBar/SocialBar";
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
 import NavRight from "../../components/NavRight/NavRight";
+import Hat from "../../components/HatKing/Hat.svg";
+import HatKing from "../../components/HatKing/HatKing";
 
 const HomePageDiv = styled.div`
     display: flex;
@@ -86,8 +88,10 @@ const Homepage = () => {
 
 
       <CenterDiv>
+       <HatKing className="Shinsekai"/>
         <TitleName style={styleT} className="title">Jheelan Guillaume</TitleName>
         <TextInfo style={styleP} className="Conso">Developpeur Full Stack JS</TextInfo>
+        <div className="iconScroll"></div>
       </CenterDiv>
 
       <RightDiv>

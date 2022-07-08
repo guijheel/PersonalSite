@@ -98,3 +98,14 @@
 .UlSocial .LiSocial:hover:nth-child(1) .ASocial:after {
   background: black;
 }
+
+/******************************************************/
+@media only screen and (max-width: 700px) {
+  .SocialBarMobile{
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+ 
+}
