@@ -213,8 +213,16 @@ h1.text-skills {
    h1.text-skills {
     font-size: 12rem;
   }
+ 
 }
+@media screen and (max-width: 767px){ 
+  .my-skills {
+    padding: 0;
+    margin-left: -10%;
+    width: 110%;
+ }
 
+}
 @media screen and (max-width: 480px) {
   .skills-section img {
     width: 60%;
@@ -225,8 +233,27 @@ h1.text-skills {
   }
 }
 
+@media screen and (max-width: 426px) {
+  .my-skills {
+   margin-left: -30%;
+ width: 125%;
+  }
+ }
+
+@media screen and (max-width: 376px) {
+ .my-skills {
+  margin-left: -40%;
+width: 135%;
+ }
+}
 @media screen and (max-width: 360px) {
    h1.text-skills {
     font-size: 5rem;
   }
 }
+@media screen and (max-width: 321px) {
+  .my-skills {
+    margin-left: -50%;
+    width: 150%;
+  }
+ }

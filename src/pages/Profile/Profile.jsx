@@ -9,7 +9,7 @@ const ProfilePageDiv = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-     border: solid 1px black ;
+     
   `;
 
 
@@ -42,7 +42,7 @@ const ShapeDiv = styled.div`
 `;
 const TextDiv = styled.p`
 display: flex;
-font-family: cursive;
+font-family: system-ui;
 flex-direction: column;
 flex-wrap: nowrap;
 align-content: center;
@@ -79,7 +79,7 @@ const Profile = () => {
       <CenterDiv>
         <ContainerDiv className='container'>
           <ShapeDiv className='shape' style={styleShape}>
-            <TextDiv  style={styleP}>
+            <TextDiv  style={styleP} className="text_shape">
               I'm Developper Full Stack JS Web and Mobile with two years
               of experience both front-end and back-end developpement
               and performing quality assurance.
@@ -90,7 +90,7 @@ const Profile = () => {
 
       </CenterDiv>
 
-      <RightDiv>
+      <RightDiv className='md_div'>
           <Skills/> 
       </RightDiv>
 

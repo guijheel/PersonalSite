@@ -88,7 +88,6 @@ const Homepage = () => {
 
 
       <CenterDiv>
-       <HatKing className="Shinsekai"/>
         <TitleName style={styleT} className="title">Jheelan Guillaume</TitleName>
         <TextInfo style={styleP} className="Conso">Developpeur Full Stack JS</TextInfo>
         <div className="iconScroll"></div>

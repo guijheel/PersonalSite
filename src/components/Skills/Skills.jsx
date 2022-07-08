@@ -17,9 +17,8 @@ font-family: "system-ui";
 const Skills = () => {
   return (
     <div>
-    <section class="skills-section my-skills" id="skills">
-
-  <img src="https://raw.githubusercontent.com/guijheel/PersonalSite/8e5bc14cc3973b9b53c0d425f6bb04701bcb2f1c/skills%20(1).svg" alt="Skills" data-aos="zoom-out"/>
+    <section className="skills-section my-skills" id="skills">
+  <img src="https://raw.githubusercontent.com/guijheel/PersonalSite/ec7df9f66cf12e7644bb91a427c202e7b7f1d846/skills%20(2).svg" alt="Skills" data-aos="zoom-out"/>
 </section>
     </div>
   )

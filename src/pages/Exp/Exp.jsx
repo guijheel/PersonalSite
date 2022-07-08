@@ -14,7 +14,7 @@ const ExpPageDiv = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-     border: solid 1px black ;
+ 
   `;
   const CenterDiv = styled.div`
   display: flex;
