@@ -78,6 +78,11 @@ const Homepage = () => {
   const styleP = {
     fontSize: width / 40,
   }
+  const ScrollClick = () => {
+    setTimeout(() => {
+      window.scroll(0,height);
+    }, 1000);
+  }
   
   return (
     <HomePageDiv style={style}>
@@ -90,7 +95,7 @@ const Homepage = () => {
       <CenterDiv>
         <TitleName style={styleT} className="title">Jheelan Guillaume</TitleName>
         <TextInfo style={styleP} className="Conso">Developpeur Full Stack JS</TextInfo>
-        <div className="iconScroll"></div>
+        <div className="iconScroll" onClick={ScrollClick}></div>
       </CenterDiv>
 
       <RightDiv>
