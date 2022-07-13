@@ -68,17 +68,11 @@ const Exp = () => {
 
 
   const GooglePush = () => {
-    window.open(
-      'https://play.google.com/store/apps/details?id=com.elyotech.ifcm',
-      '_blank' // <- This is what makes it open in a new window.
-    );
+  
   }
 
   const ApplePush = () => {
-    window.open(
-      'https://www.apple.com/fr/app-store/',
-      '_blank' // <- This is what makes it open in a new window.
-    );
+   
   }
 
   return (
@@ -140,8 +134,9 @@ const Exp = () => {
         src="https://i.ibb.co/3MSkCXT/swync-download-android-ios-split.png"
         href=""
         className='pointer'
-        onClick={ApplePush()}
-      />
+        
+      >
+      </Box>
   </BlockDiv>
 </Parallax>
 
