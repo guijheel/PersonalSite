@@ -2,10 +2,11 @@ import React from 'react'
 import "./Myfont.scss";
 import styled from "styled-components";
 import wavebottom from './wavebottom.svg';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import KingHat from './hat.svg';
 import Merry from './Merry.svg';
 import useWindowDimensions from '../../functions/useWindows';
+import SocialFooter from '../SocialFooter/SocialFooter';
 const FooterFooter = styled.div`
      background-image: url(${wavebottom});
      background-position: center bottom;
@@ -54,6 +55,9 @@ const Footer = () => {
       <Typography className='white entertainement'>JHEELAN GUILLAUME 
       
        2022</Typography>
+       <Box >
+        <SocialFooter/>
+       </Box>
       </CenterDiv>
       
     </FooterFooter>

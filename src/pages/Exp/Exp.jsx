@@ -133,8 +133,7 @@ const Exp = () => {
         alt="iOS"
         src="https://i.ibb.co/3MSkCXT/swync-download-android-ios-split.png"
         href=""
-        className='pointer'
-        
+        className='pointer'  
       >
       </Box>
   </BlockDiv>
