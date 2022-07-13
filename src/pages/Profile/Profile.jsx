@@ -38,7 +38,8 @@ const ContainerDiv = styled.div`
   
 `;
 const ShapeDiv = styled.div`
-  
+cursor:pointer;
+
 `;
 const TextDiv = styled.p`
 display: flex;

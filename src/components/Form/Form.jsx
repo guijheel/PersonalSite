@@ -211,7 +211,7 @@ const Form = () => {
       id="form-contact"
     >
       <br />
-      <Typography fontWeight={400} fontSize="1.5rem">
+      <Typography fontWeight={400} fontSize="1.5rem" className="pointer">
         Contact us
       </Typography>
       <br />
@@ -273,7 +273,7 @@ const Form = () => {
         sitekey="6Lde14ogAAAAABynRN1N2qekpdAZDG6cHPPWBxvx"
         onChange={onChange}
         theme="dark"
-        className="captchaGoogle"
+        className="captchaGoogle pointer"
         size="normal"
         badge="inline"
         onExpired={ResetCaptcha}

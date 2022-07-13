@@ -9,6 +9,7 @@ import Iphone3 from '../../components/IphoneIII/Iphone3';
 import Iphone4 from '../../components/IphoneIV/Iphone4';
 import Heart from '../../components/Heart/Heart';
 import { Box } from '@mui/material';
+import { useHistory } from "react-router-dom";
 
 const ExpPageDiv = styled.div`
     display: flex;
@@ -50,10 +51,11 @@ font-family: "system-ui";
     letter-spacing: 1px;
     word-spacing: 2px;
     margin-right: -20px;
+    cursor:pointer;
+
   `;
 const Exp = () => {
   const { height, width } = useWindowDimensions();
- 
   const style = {
     height: height + height / 2,
   }
@@ -63,6 +65,22 @@ const Exp = () => {
   const styleT = {
     fontSize: width / 20,
   }
+
+
+  const GooglePush = () => {
+    window.open(
+      'https://play.google.com/store/apps/details?id=com.elyotech.ifcm',
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  }
+
+  const ApplePush = () => {
+    window.open(
+      'https://www.apple.com/fr/app-store/',
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  }
+
   return (
     <div>
       <ExpPageDiv style={style} id="Expage">
@@ -104,19 +122,25 @@ const Exp = () => {
         }}
         alt="Android"
         src="https://i.ibb.co/HT2L61j/google.png"
-        href=""
-      />
-        <Box
+        className='pointer'
+        onClick={GooglePush()}
+      >
+        
+      </Box>
+        <Box 
         component="img"
         sx={{
           height: 60,
           padding:"5px",
           maxHeight: { xs: 233, md: 167 },
           maxWidth: { xs: 350, md: 250 },
+          
         }}
         alt="iOS"
         src="https://i.ibb.co/3MSkCXT/swync-download-android-ios-split.png"
         href=""
+        className='pointer'
+        onClick={ApplePush()}
       />
   </BlockDiv>
 </Parallax>

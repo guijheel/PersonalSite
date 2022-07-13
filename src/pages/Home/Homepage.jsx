@@ -55,6 +55,7 @@ const HomePageDiv = styled.div`
     letter-spacing: 1px;
     word-spacing: 5px;
     margin-right: -20px;
+    cursor:pointer;
   `;
 
   const TextInfo = styled.p`
@@ -64,6 +65,8 @@ font-family: "system-ui";
     letter-spacing: 1px;
     word-spacing: 2px;
     margin-right: -20px;
+    cursor:pointer;
+
   `;
 
 const Homepage = () => {

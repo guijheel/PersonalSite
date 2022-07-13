@@ -12,13 +12,14 @@ const FooterFooter = styled.div`
     background-repeat: no-repeat;
     background-size: 100%;
     widht:100%;
-    height: 350px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: flex-end;
     justify-content: center;
     align-items: flex-end;
+    cursor:pointer;
   `;
   const LeftDiv = styled.div`
   display: block;

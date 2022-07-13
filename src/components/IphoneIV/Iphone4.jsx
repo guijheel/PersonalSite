@@ -4,6 +4,8 @@ import "./Myfont4.scss";
 
 const IphoneDiv = styled.div`
     padding:5px;
+    cursor:pointer;
+
   `;
 
 
