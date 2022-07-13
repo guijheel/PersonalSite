@@ -80,11 +80,27 @@ const SocialFooter = () => {
   return (
     
         <div className='SocialDisplay'>
-                <FacebookIcon/>
-                <GithubIcon/>
-                <MailIcon/>
-                <InstagramIcon/>
-                <TwitterIcon/>
+          <a href='https://instagram.com' target="_blank">
+          <InstagramIcon/>
+
+          </a>
+          <a href='https://facebook.com'target="_blank">
+          <FacebookIcon/>
+
+          </a>
+          <a href='https://twitter.com'target="_blank">
+          <TwitterIcon/>
+
+          </a>
+          <a href='https://github.com'target="_blank">
+          <GithubIcon/>
+
+          </a>
+          <a  href="mailto:contact@guillaumejheelan.com" target="_blank">
+          <MailIcon/>
+
+
+          </a>
         </div>
   )
 }

@@ -38,6 +38,10 @@ align-content: flex-start;
 justify-content: center;
 align-items: flex-start;
 width: 65%;
+justify-content: center;
+align-content: flex-start;
+flex-wrap: nowrap;
+flex-direction: column;
 `;
 const Footer = () => {
   const { height, width } = useWindowDimensions();
