@@ -183,9 +183,28 @@ const Form = () => {
     setOpen(false);
   };
 
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+  console.log(inView)
   return (
 
-    <form
+    <motion.div
+   className="divForm"
+    ref={ref}
+    variants={boxVariant}
+    initial="hidden"
+    animate={control}>
+
+   
+      <form
       ref={form}
       onSubmit={sendEmail}
       className="formContact slide-in-left"
@@ -306,6 +325,7 @@ const Form = () => {
       </Snackbar>
     </form>
 
+    </motion.div>
      
       
     

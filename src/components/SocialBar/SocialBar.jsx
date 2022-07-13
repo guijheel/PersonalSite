@@ -87,7 +87,7 @@ const styles = {
 
     <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">
-          <GithubA  className="ASocial">
+          <GithubA  className="ASocial" href='https://instagram.com' target="_blank">
             <InstagramIcon aria-hidden="true" className="IconSocial"/>
             <GithubTxt className="TextSocial"> Instagram</GithubTxt>
           </GithubA>
@@ -98,7 +98,7 @@ const styles = {
 
       <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">
-          <GithubA  className="ASocial">
+          <GithubA  className="ASocial"  href='https://facebook.com' target="_blank">
             <FacebookIcon aria-hidden="true" className="IconSocial"/>
             <GithubTxt className="TextSocial"> Facebook</GithubTxt>
           </GithubA>
@@ -109,7 +109,7 @@ const styles = {
 
         <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">
-          <GithubA  className="ASocial">
+          <GithubA  className="ASocial"  href='https://twitter.com' target="_blank">
             <TwitterIcon aria-hidden="true" className="IconSocial"/>
             <GithubTxt className="TextSocial"> Twitter</GithubTxt>
           </GithubA>
@@ -120,7 +120,7 @@ const styles = {
 
       <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">
-          <GithubA  className="ASocial">
+          <GithubA  className="ASocial"  href='https://github.com/guijheel' target="_blank">
             <GithubIcon aria-hidden="true" className="IconSocial"/>
             <GithubTxt className="TextSocial"> Github</GithubTxt>
           </GithubA>
@@ -131,7 +131,7 @@ const styles = {
       <br/>
       <GithubUl className="UlSocial" style={styles}>
         <GithubLi className="LiSocial">
-          <GithubA  className="ASocial">
+          <GithubA  className="ASocial"  href="mailto:contact@guillaumejheelan.com" target="_blank">
             <MailIcon aria-hidden="true" className="IconSocial"/>
             <GithubTxt className="TextSocial"> Mail</GithubTxt>
           </GithubA>

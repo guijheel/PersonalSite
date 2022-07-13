@@ -81,7 +81,7 @@ const Homepage = () => {
   const ScrollClick = () => {
     setTimeout(() => {
       window.scroll(0,height);
-    }, 1000);
+    }, 500);
   }
   
   return (
